@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<clusters>
+    <cluster clusterName="wqq1">
+        <neptuneMaster>
+            <historyRpc>1.1.1.1:1010</historyRpc>
+            <MMRpc>1.1.1.1:1011</MMRpc>
+            <historyPath>/home/wangqianqian02/meta/user-app-meta/</historyPath>
+            <NaPort>1111</NaPort>
+            <deleteInterval>2592000</deleteInterval>" <!--3600 * 24 * 30-->
+            <updateTimeFreq>5000</updateTimeFreq> <!--taskUpdateTimeFreq-->
+            <pageSize>50</pageSize>
+        </neptuneMaster>
+        <casioMaster>
+            <casioHost>test.test1.baidu.com</casioHost>
+            <casioPort>1111</casioPort>
+            <searchDBHost>test2.test3.baidu.com</searchDBHost>
+            <searchDBPort>8220</searchDBPort>
+            <casioEndTime>System.currentTimeMillis() / 1000</casioEndTime>
+            <casioInterval>7200</casioInterval>  <!--startTime = endTime - interval-->
+            <matrixUsers>
+                <matrixUser>user1</matrixUser>
+            </matrixUsers>
+            <matrixUsers>
+                <matrixUser>user2</matrixUser>
+            </matrixUsers>
+            <matrixUsers>
+                <matrixUser>user3</matrixUser>
+            </matrixUsers>
+        </casioMaster>
+    </cluster>
+    <cluster clusterName="wqq2">
+        <neptuneMaster>
+            <historyRpc>1.1.1.1:1010</historyRpc>
+            <MMRpc>1.1.1.1:1011</MMRpc>
+            <historyPath>/home/wangqianqian02/meta/user-app-meta/</historyPath>
+            <NaPort>1111</NaPort>
+            <deleteInterval>2592000</deleteInterval>" <!--3600 * 24 * 30-->
+            <updateTimeFreq>5000</updateTimeFreq> <!--taskUpdateTimeFreq-->
+            <pageSize>50</pageSize>
+        </neptuneMaster>
+        <casioMaster>
+            <casioHost>test.test1.baidu.com</casioHost>
+            <casioPort>1111</casioPort>
+            <searchDBHost>test2.test3.baidu.com</searchDBHost>
+            <searchDBPort>8220</searchDBPort>
+            <casioEndTime>System.currentTimeMillis() / 1000</casioEndTime>
+            <casioInterval>7200</casioInterval>  <!--startTime = endTime - interval-->
+            <matrixUsers>
+                <matrixUser>user1</matrixUser>
+            </matrixUsers>
+            <matrixUsers>
+                <matrixUser>user2</matrixUser>
+            </matrixUsers>
+            <matrixUsers>
+                <matrixUser>user3</matrixUser>
+            </matrixUsers>
+        </casioMaster>
+    </cluster>
+    <cluster clusterName="wqq3">
+        <neptuneMaster>
+            <historyRpc>1.1.1.1:1010</historyRpc>
+            <MMRpc>1.1.1.1:1011</MMRpc>
+            <historyPath>/home/wangqianqian02/meta/user-app-meta/</historyPath>
+            <NaPort>1111</NaPort>
+            <deleteInterval>2592000</deleteInterval>" <!--3600 * 24 * 30-->
+            <updateTimeFreq>5000</updateTimeFreq> <!--taskUpdateTimeFreq-->
+            <pageSize>50</pageSize>
+        </neptuneMaster>
+        <casioMaster>
+            <casioHost>test.test1.baidu.com</casioHost>
+            <casioPort>1111</casioPort>
+            <searchDBHost>test2.test3.baidu.com</searchDBHost>
+            <searchDBPort>8220</searchDBPort>
+            <casioEndTime>System.currentTimeMillis() / 1000</casioEndTime>
+            <casioInterval>7200</casioInterval>  <!--startTime = endTime - interval-->
+            <matrixUsers>
+                <matrixUser>user1</matrixUser>
+            </matrixUsers>
+            <matrixUsers>
+                <matrixUser>user2</matrixUser>
+            </matrixUsers>
+            <matrixUsers>
+                <matrixUser>user3</matrixUser>
+            </matrixUsers>
+        </casioMaster>
+    </cluster>
+</clusters>
