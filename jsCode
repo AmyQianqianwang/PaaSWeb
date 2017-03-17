@@ -1,3 +1,4 @@
+//index.js代码
 /**
  * Created by wangqianqian02 on 16/11/23.
  */
@@ -491,3 +492,78 @@ if (currentUrl.indexOf("bce.baidu.com") > 0) {
                             b.preventDefault()
                     })
         } (window.jQuery);
+        
+// custom.js
+/* Navigation */
+
+$(document).ready(function () {
+
+    $(window).resize(function () {
+        if ($(window).width() >= 765) {
+            $('.sidebar #side-nav').slideDown(350);
+        }
+        else {
+            $('.sidebar #side-nav').slideUp(350);
+        }
+    });
+
+    $('#side-nav > li > a').on('click', function (e) {
+        if ($(this).parent().hasClass('has_sub')) {
+            e.preventDefault();
+        }
+        if ($(this).hasClass('subdrop')) {
+            $(this).removeClass('subdrop');
+            $(this).next('ul').slideUp(350);
+        }
+        else if (!$(this).hasClass('subdrop')) {
+            $(this).next('ul').slideDown(350);
+            $(this).addClass('subdrop');
+        }
+    });
+});
+
+$(document).ready(function () {
+    $('.sidebar-dropdown a').on('click', function (e) {
+        e.preventDefault();
+
+        if (!$(this).hasClass('open')) {
+            // hide any open menus and remove all other classes
+            $('.sidebar #side-nav').slideUp(350);
+            $('.sidebar-dropdown a').removeClass('open');
+
+            // open our new menu and add the open class
+            $('.sidebar #side-nav').slideDown(350);
+            $(this).addClass('open');
+        }
+
+        else if ($(this).hasClass('open')) {
+            $(this).removeClass('open');
+            $('.sidebar #side-nav').slideUp(350);
+        }
+    });
+
+});
+
+/* Scroll to Top */
+
+
+$('.totop').hide();
+
+$(function () {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) {
+            $('.totop').slideDown();
+        }
+        else {
+            $('.totop').slideUp();
+        }
+    });
+
+    $('.totop a').click(function (e) {
+        e.preventDefault();
+        $('body,html').animate({scrollTop: 0}, 500);
+    });
+
+});
+
+        
