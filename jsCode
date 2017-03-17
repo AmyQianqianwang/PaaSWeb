@@ -493,7 +493,7 @@ if (currentUrl.indexOf("bce.baidu.com") > 0) {
                     })
         } (window.jQuery);
         
-// custom.js
+// custom.js代码
 /* Navigation */
 
 $(document).ready(function () {
