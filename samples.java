@@ -273,7 +273,8 @@ public class TaskDataServlet extends HttpServlet {
             String str1 = s1.replace('_','-');
             String str2 = s2.replace('_','-');
             return str2.compareTo(str1);
-            // app_user_20161111152008_1928 去掉前面"app_user_9"个字符，和后面"_1928"5个或6个字符
+            // app_user_20161111152008_1928 与 app-user-20161111152008-1930去掉前面"app_user_9"个字符，
+            // 和后面"_1928"5个或6个字符之后再比较。前面方法不好使，所以直接把_转为-再排序
         }
     }
 //获取数据并分页代码
